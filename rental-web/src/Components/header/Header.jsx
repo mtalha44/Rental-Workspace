@@ -2,12 +2,12 @@ import { SocialLinks } from "./Social";
 import  weblogo  from "../../assets/weblogo.png";
 import { Navbar } from "./Navbar";
 import AnimatedSearch from "./SearchInput";
-import useScrollBehaviour from "./ScrollBehaviour";
+import useScrollBehaviour from "../hook/ScrollBehaviour";
 export const Header = () => {
     const showSocial = useScrollBehaviour();
 
     return (
-    <div className={`header fixed w-[100%] bg-white border-b-2 transform transition-height duration-300 border-amber-950 h-[8.7rem] max-[907px]:h-[10rem] max-[735px]:h-[7rem] max-[535px]:h-24
+    <div className={`header z-50 fixed w-[100%] bg-white border-b-2 transform transition-height duration-300 border-amber-950 h-[8.7rem] max-[907px]:h-[10rem] max-[735px]:h-[7rem] max-[535px]:h-24
         ${showSocial ?  "" : "min-[735px]:h-[6.6rem]" }
     `}>
 

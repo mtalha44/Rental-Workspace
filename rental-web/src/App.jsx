@@ -4,10 +4,18 @@ import { Login } from './Components/pages/login/Login'
 import { SignUp } from './Components/pages/signup/SignUp'
 import { Home } from './Components/pages/home/home'
 import { AppLayout } from './Components/AppLayout/AppLayout'
+import { Products } from './Components/pages/product/products'
 
 function App() {
   const router = createBrowserRouter([
-
+      {
+        path:'/login',
+        element : <Login/>
+      },
+      {
+        path : '/signup',
+        element : <SignUp/>
+      },
       {
       path: '/',
       element: <AppLayout/>,
@@ -23,7 +31,7 @@ function App() {
         },
         {
           path : '/products',
-          element : <h1>Products</h1>
+          element : <Products/>
         },
       {
         path: '/about',

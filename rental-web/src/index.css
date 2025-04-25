@@ -8,3 +8,10 @@
 body{
     /* background-color: rgb(24, 24, 84); */
 }
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
